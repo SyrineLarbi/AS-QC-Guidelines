@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assests/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>AS QC training</title>
+
+     <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+
+    <!--------Bootstrap--------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/fbcf1507ca.js" crossorigin="anonymous"></script>
+</head>
+<body class="home">
+
+    <!--------- Preloader Start --------->
+    <div id="preloader">
+        <div class="load">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!--------- Preloader End --------->
+    <!--------- Header Start --------->
+    <header class="header-section header-sticky">
+        <nav class="navBar-container">
+            <a href="#">
+                <img src="assests/favicon-32x32.png" alt="WMT" class="logo-img">
+            </a>
+            <div class="links">
+                <a href="index.html" class="active">Home</a>
+                <a href="QC.html">QC general instructions</a>
+                <a href="mobile.html">Mobile Phone</a>
+                <a href="tv.html">Television</a>
+                <a href="smartwatches.html">Smartwatches</a>
+                <a href="headphones.html">Headphones</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+     <div class="home_container">
+        <div class="cardsContainer">
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#QCBasic">
+              <div class="icon mobile">
+                  <i><img src="assests/mobile/antivirus.png" alt=""></i>
+              </div>
+            <h3>QC Basic</h3>
+            <div class="go-corner">
+              <div class="go-arrow">
+                →
+              </div>
+            </div>
+             </a>
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#rtc_container">
+                <div class="icon mobile">
+                    <i><img src="assests/mobile/notice.png" alt=""></i>
+                </div>
+              <h3>RTC</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+        </div>
+
+  <!-- Modal  for QC Basic -->
+  <div class="modal fade" id="QCBasic" aria-hidden="true" aria-labelledby="findIMEIN" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Reset">QC Basic</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+               <span class="step">1</span>
+               <div class="image_container">
+                <img src="assests/mobile/smartphone-with-cracked-screen.jpeg" alt="" class="card_image">
+                <img src="assests/QC/03.jpg" alt="" class="card_image">
+                <img src="assests/QC/04.png" alt="" class="card_image">
+             </div> 
+               <div class="card_text">
+                <p>Customer Induced Damage (CID)</p>
+                <p> No broken, scratched or missing parts.</p>
+               <img class="interdit" src="assests/interdit-.png" alt="">
+               </div>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">2</span>
+               <div class="image_container">
+                  <img src="assests/QC/BOX.png" alt="" class="card_image">
+                  <img src="assests/QC/WMT.png" alt="" class="card_image">
+               </div>
+               <p class="card_text">
+                Other Specifications on website must be the same as details on the item: Like <b>color, brand, size, reference, battery power..etc</b> 
+               </p>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+               <span class="step">3</span>
+               <div class="image_container">
+                <img src="assests/QC/01.jpg" alt="" class="card_image">
+                <img src="assests/QC/05.JPG" alt="" class="card_image">
+                <img class="interdit" src="assests/interdit-.png" alt="">
+               </div>
+               <p class="card_text">
+                Unacceptable damage extends to any of the following: Tears, scrapes, indents, crushing, creasing, bending, discoloration, ink, and staining       
+               </p>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+               <span class="step">4</span>
+               <div class="image_container">
+                <img src="assests/QC/08.png" alt="" class="card_img">
+                <img src="assests/QC/06.png" alt="" class="card_image">
+                <img class="interdit" src="assests/interdit-.png" alt="">
+             </div>
+               <p class="card_text">
+                Review the website's description to confirm the contents within the box and the accompanying accessories sold with the product.
+               </p>
+             </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal  for guideline -->
+  <div class="modal fade" id="guideline" aria-hidden="true" aria-labelledby="update" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Reset">RTC </h5>
+         
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+               <span class="step">1</span>
+               <img src="assests/ampoule.png" alt="" class="card_image">
+               <div class="card_text">
+                <table class="table table-hover table-bordered caption-top table-responsive">
+                    <caption>Lighting </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Do <i class="fa fa-check-square" style="color: #9bc5a7;"></i></th>
+                            <th scope="col">Don't <i class="fas fa-times-circle" style="color: #b02727;"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Natural light is best</td>
+                            <td>Record at night with poor lighting</td>
+                        </tr>
+                        <tr>
+                            <td>use soft, diffused lighting to avoid harsh shadows.
+                            </td>
+                            <td>
+                            Record with strong lights or lamps behind you
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+             
+              
+               </div>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+               <span class="step">2</span>
+               <video controls src="assests/video/Sound.mp4" class="card_video"></video>
+               <img src="assests/interdit-.png" class="interdit" alt="">
+               <div class="card_text">
+                <table class="table table-hover table-bordered caption-top table-responsive">
+                    <caption>Sound</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Do <i class="fa fa-check-square" style="color: #9bc5a7;"></i></th>
+                            <th scope="col">Don't <i class="fas fa-times-circle" style="color: #b02727;"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Use quiet surroundings and speak in a clear voice</td>
+                            <td>Background noise like traffic, construction, or loud machinery</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+             
+              
+               </div>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+               <span class="step">3</span>
+               <img src="assests/background.jpg" alt="" class="card_image">
+               <img src="assests/interdit-.png" style="border: none;" alt="" class="interdit">
+               <div class="card_text">
+                <table class="table table-hover table-bordered caption-top table-responsive">
+                    <caption>Background</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Do <i class="fa fa-check-square" style="color: #9bc5a7;"></i> </th>
+                            <th scope="col">Don't <i class="fas fa-times-circle" style="color: #b02727;"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Set up a clean, uncluttered backdrop or surface to showcase the item</td>
+                            <td>Use an overly busy or chaotic” background</td>
+                        </tr>
+                        <tr>
+                            <td>Ensure the item is in focus, and the frame is well-composed. Avoid extreme close-ups unless necessary
+                            </td>
+                            <td>
+                                Show moving or distracting things ­in the background (other people, etc)
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+             
+              
+               </div>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+               <span class="step">4</span>
+               <img src="assests/1329261622.png" alt="" class="card_image">
+               <img src="assests/interdit-.png" style="border: none;" alt="" class="interdit">
+               <div class="card_text">
+                <table class="table table-hover table-bordered caption-top table-responsive">
+                    <caption>Edit</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Do 
+                                <i class="fa fa-check-square" style="color: #9bc5a7;"></i>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Keep most videos under two minutes</td>
+                        </tr>
+                        <tr>
+                             <td>Ensure the item is in focus, and the frame is well-composed. Avoid extreme close-ups unless necessary
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            Explain and demonstrate how the item works in a clear, step-by-step manner.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+             
+              
+               </div>
+             </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-primary" data-bs-target="#rtc_container" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+        </div>
+      </div>
+    </div>
+   </div>
+  
+   <!-- Modal  for RTC -->
+   <div class="modal fade" id="rtc_container" aria-hidden="true" aria-labelledby="rtc" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Reset">Return to Customer RTC</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">1</span>
+               <img src="assests/gdoc.png" alt="" class="card_image">
+               <div class="card_text">
+                <p> After conducting the Aftersales product check on WMT, if the decision is to RTC, the agent would not complete the update in the system.</p>
+                 <p><b>Instead, they would document their country’s tracker, and wait for CXP/CS feedback</b></p>
+               </div>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">2</span>
+               <img src="assests/drive.png" alt="" class="card_image">
+               <div class="card_text">
+                <p>Take some pictures/video to highlight the item and justify our decision. Afterwards, upload them to Google Drive, each in their respective country's folder.</p>
+                <button class="btn btn-primary" data-bs-target="#drive"data-bs-toggle="modal" data-bs-dismiss="modal">Upload a file to the drive</button>
+                <button class="btn btn-primary" data-bs-target="#guideline"data-bs-toggle="modal" data-bs-dismiss="modal">Photo/Video Standards </button>
+               </div>
+               
+             </div>
+          </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <!-- Modal  for Upload a file to the drive -->
+  <div class="modal fade" id="drive" aria-hidden="true" aria-labelledby="update" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Reset">Upload a file to the drive </h5>
+         
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="conatiner">
+                <div class="wrapper" id="containerImg">
+                   <span class="step">1</span>
+                   <img src="assests/country.png" alt="" class="card_image">
+                   <div class="card_text">
+                    <p> Click on this <a href="https://drive.google.com/drive/u/0/folders/1sS2ATHHn3RF2Godgx1kqOYTuoH7oXA76">link</a> and select your country folder.</p>
+                   </div>
+                 </div>
+            </div>
+            <div class="conatiner">
+                <div class="wrapper" id="containerImg">
+                   <span class="step">2</span>
+                   <div class="image_container">
+                    <img src="assests/folder.png" alt="" class="card_image">
+                   <img src="assests/order number.png" alt="" class="card_image">
+                   </div>
+                   <div class="card_text">
+                    <p> Create a new folder and name it with the order number. (check exemple)</p>
+                   </div>
+                 </div>
+            </div>
+            <div class="conatiner">
+                <div class="wrapper" id="containerImg">
+                   <span class="step">3</span>
+                   <div class="image_container">
+                    <img src="assests/file.png" alt="" class="card_image">
+                   <img src="assests/files.png" alt="" class="card_image">
+                   </div>
+                   <div class="card_text">
+                    <p> Click on <b>File upload</b> to upload images and videos .</p>
+                   </div>
+                 </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-primary"  data-bs-target="#rtc_container" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   
+    </div> 
+    </main>
+    <footer class="footer">
+      <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> - Jumia</p>
+    </footer>
+
+    
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+</body>
+</html>

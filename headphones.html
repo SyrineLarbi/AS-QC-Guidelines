@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assests/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>AS QC training</title>
+
+     <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+
+    <!--------Bootstrap--------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/fbcf1507ca.js" crossorigin="anonymous"></script>
+</head>
+<body class="home">
+
+    <!--------- Preloader Start --------->
+    <div id="preloader">
+        <div class="load">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!--------- Preloader End --------->
+    <!--------- Header Start --------->
+    <header class="header-section header-sticky">
+        <nav class="navBar-container">
+            <a href="#">
+                <img src="assests/favicon-32x32.png" alt="WMT" class="logo-img">
+            </a>
+            <div class="links">
+              <a href="index.html" class="active">Home</a>
+              <a href="QC.html">QC general instructions</a>
+              <a href="mobile.html">Mobile Phone</a>
+              <a href="tv.html">Television</a>
+              <a href="smartwatches.html">Smartwatches</a>
+              <a href="headphones.html">Headphones</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+ <div class="home_container">
+        <div class="cardsContainer">
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#NoPower">
+                <div class="icon mobile">
+                    <i><img src="assests/headphone/off-button.png" alt=""></i>
+                </div>
+              <h3>No Power</h3>
+              <div class="go-corner">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+               </a>
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#Bluetooth">
+              <div class="icon mobile">
+                  <i><img src="assests/headphone/headphones.png" alt=""></i>
+              </div>
+            <h3>Bluetooth Pairing</h3>
+            <div class="go-corner">
+              <div class="go-arrow">
+                →
+              </div>
+            </div>
+             </a>
+            <a class="card-item" href="" data-bs-toggle="modal" data-bs-target="#synchro">
+                <div class="icon mobile">
+                    <i><img src="assests/headphone/defective.png" alt=""></i>
+                </div>
+              <h3>One earbud won't connect</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#batterry" data-bs-toggle="modal" data-bs-target="#batterry">
+                <div class="icon mobile">
+                  <i><img src="assests/headphone/low-battery.png" alt=""></i>
+                </div>
+              <h3>Batterry issue</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="" data-bs-toggle="modal" data-bs-target="#resetHeadphone" >
+              <div class="icon mobile">
+                  <i><img src="assests/smartwatch/gear.png" alt=""></i>
+              </div>
+            <h3>Factory Reset</h3>
+            <div class="go-corner" href="#">
+              <div class="go-arrow">
+                →
+              </div>
+            </div>
+          </a>
+        </div>
+
+  <!-- Modal  for Bluetooth Pairing -->
+  <div class="modal fade" id="Bluetooth" tabindex="-1" aria-labelledby="Bluetooth" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="turnOff">Bluetooth Pairing</h3>
+            <h5>Customer’s Return Reason :  Cannot pair the headphones with a device </h5>
+          </div>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="conatiner">
+                <div class="wrapper mobile" id="containerImg">
+                    <span class="step">1</span>
+                    <img src="assests/headphone/04.jpg" alt="" class="card_image">
+                    <div class="card_text">
+                        <p>- With the charging case lid open, press and hold the pairing button on the back of the charging case for about 5 seconds or more.
+                        </p>
+                        <div class="videoBtn">
+                            <div class="play"></div>
+                            <p>Play Video</p>
+                          </div>
+                          <div class="videoContainer">
+                            <video controls style="width: fit-content;" src="/assests/video/headphone/i0220_wf1000xm5.mp4"></video>
+                            <span class="close">&#10006; Close Video</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conatiner">
+                <div class="wrapper" id="containerImg">
+                    <span class="step">2</span>
+                    <img src="assests/headphone/pair.png" alt="" class="card_image">
+                    <div class="card_text">
+                        <p>Take out both Earbuds. To pair Earbuds, go to Settings, then Bluetooth, and select your product from the list
+                        </p>
+                    </div>
+                   </div>
+            </div>
+            <div class="conatiner">
+                <div class="wrapper mobile" id="containerImg">
+                    <span class="step">3</span>
+                    <img src="assests/headphone/06.png" alt="" class="card_image">
+                    <div class="card_text">
+                        <p>If the issue persists, Perform a Factory Reset to clear pairing history.
+                        </p>
+                        <button class="btn btn-primary" data-bs-target="#resetHeadphone"data-bs-toggle="modal" data-bs-dismiss="modal">How to Reset the headphones.</button>
+                    </div>
+                   </div>
+            </div>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal  for Batterry issue< -->
+   <div class="modal fade" id="batterry" aria-hidden="true" aria-labelledby="batterry" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="turnOff">Batterry issue</h3>
+            <h5>the earbuds are not charging /not working            </h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+             <div class="wrapper" id="containerImg">
+                <span class="step">1</span>
+                <img src="assests/headphone/02.jpg" alt="" class="card_image">
+                <div class="card_text">
+                  <p>Remove plastic film over charging pins                </p>
+                </div>
+               
+              </div>
+          </div>
+         
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">2</span>
+               <img src="assests/headphone/11.jpg" alt="" class="card_image">
+                <div class="card_text">
+                    <p>- Check the direction of the earbuds</p>
+                    <p>- Insert them into the grooves of the left and right slots of the charging case.</p>
+                      
+                </div>
+             </div>
+         </div>
+         <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">3</span>
+               <img src="assests/headphone/12.jpg" alt="" class="card_image">
+                <p class="card_text">- Check the charging cable. </p>
+             </div>
+         </div>
+         <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">4</span>
+               <img src="assests/headphone/01.jpg" alt="" class="card_image">
+                <p class="card_text">When the battery is completely discharged, the earbuds require at least 10 minutes of charging time to turn on. </p>
+             </div>
+         </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal  for One earbud won't connect -->
+  <div class="modal fade" id="synchro" tabindex="-1" aria-labelledby="synchro" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="turnOff">One earbud won't connect</h3>
+            <h5>Customer’s Return Reason : The right/left earbud not working </h5>
+          </div>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="conatiner">
+                <div class="wrapper" id="containerImg">
+                    <span class="step">1</span>
+                    <img src="assests/headphone/blue.webp" alt="" class="card_image">
+                    <div class="card_text">
+                        <p>- Unpair the earbuds from your phone by removing them from the Bluetooth list and turn off your phone’s Bluetooth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="conatiner">
+                <div class="wrapper" id="containerImg">
+                    <span class="step">2</span>
+                    <img src="assests/headphone/13.png" alt="" class="card_image">
+                    <div class="card_text">
+                        <p>Power off both earbuds by pressing and holding each one for 5 seconds.
+                        </p>
+                        <p>Reset the earbuds by pressing and holding the controls simultaneously for 10 seconds. </p>
+                    </div>
+                   </div>
+            </div>
+            <div class="conatiner">
+                <div class="wrapper mobile" id="containerImg">
+                    <span class="step">3</span>
+                    <img src="assests/headphone/06.png" alt="" class="card_image">
+                    <div class="card_text">
+                        <p>Put the earbuds in the charging case </p>
+                    </div>
+                   </div>
+            </div>
+            <div class="conatiner">
+                <div class="wrapper" id="containerImg">
+                    <span class="step">4</span>
+                    <img src="assests/headphone/pair.png" alt="" class="card_image">
+                    <div class="card_text">
+                        <p>Pair the earbuds with your phone by turning on your Bluetooth and finding your Skullcandy model in the discovered devices list </p>
+                    </div>
+                   </div>
+            </div>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Modal  for No Power -->
+   <div class="modal fade" id="NoPower" aria-hidden="true" aria-labelledby="NoPower" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="turnOff">No Power</h3>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+               <span class="step">1</span>
+               <img src="assests/headphone/09.png" alt="" class="card_image">
+               <p class="card_text">
+                The remaining battery of the headphones is 1% or lower. Charge the headphones and check if the indicator lights up. 
+               </p>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+              <span class="step">2</span>
+              <div class="image_container">
+                <img src="assests/headphone/07.png" alt="" class="card_image">
+                <img src="assests/headphone/08.png" alt="" class="card_image">
+            </div>
+               <p class="card_text">- Make sure the battery is fully charged. </p>
+            </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+                <span class="step">3</span>
+                <img src="assests/headphone/06.png" alt="" class="card_image">
+                <div class="card_text">
+                    <p>If the issue persists, Perform a Factory Reset.
+                    </p>
+                    <button class="btn btn-primary" data-bs-target="#resetHeadphone"data-bs-toggle="modal" data-bs-dismiss="modal">How to Reset the headphones.</button>
+                </div>
+               </div>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+  <!-- Modal  for Factory Reset -->
+  <div class="modal fade" id="resetHeadphone" aria-hidden="true" aria-labelledby="resetHeadphone" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="turnOff">Factory Reset </h3>
+            <h5>Customer’s Return Reason : connection problems, Batterry issue, synchronization...</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+               <span class="step">1</span>
+               <img src="assests/headphone/04.jpg" alt="" class="card_image">
+               <div class="card_text">
+                <p>- After about 15 seconds, the indicator (orange) on the charging case flashes for about 5 seconds.
+                </p>
+                <p>- Then, the indicator on the charging case turns off and the headset will be reset.</p>
+              <div class="videoBtn">
+                <div class="play"></div>
+                <p>Play Video</p>
+              </div>
+              <div class="videoContainer">
+                <video controls src="/assests/video/headphone/Reset.mp4"></video>
+                <span class="close">&#10006; Close Video</span>
+              </div>
+               </div>
+             </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-primary" id="resetbtn" data-bs-target="#randomlyRestart" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+        </div>
+      </div>
+    </div>
+   </div>
+    </div>
+    </main>
+   
+    <footer class="footer">
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> - Jumia</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+</body>
+</html>

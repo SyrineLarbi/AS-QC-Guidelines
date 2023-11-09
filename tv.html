@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assests/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    
+    <title>AS QC training</title>
+
+     <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+
+    <!--------Bootstrap--------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/fbcf1507ca.js" crossorigin="anonymous"></script>
+</head>
+<body class="home">
+
+    <!--------- Preloader Start --------->
+    <div id="preloader">
+        <div class="load">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!--------- Preloader End --------->
+    <!--------- Header Start --------->
+    <header class="header-section header-sticky">
+        <nav class="navBar-container">
+            <a href="#">
+                <img src="assests/favicon-32x32.png" alt="WMT" class="logo-img">
+            </a>
+            <div class="links">
+              <a href="index.html" class="active">Home</a>
+              <a href="QC.html">QC general instructions</a>
+              <a href="mobile.html">Mobile Phone</a>
+              <a href="tv.html">Television</a>
+              <a href="smartwatches.html">Smartwatches</a>
+              <a href="headphones.html">Headphones</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <div class="home_container">
+        <div class="cardsContainer">
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#findTheSerialN">
+                <div class="icon">
+                    <i><img src="assests/TV/serial number.png" alt=""></i>
+                </div>
+              <h3>Find the Serial Number</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#noPower">
+                <div class="icon">
+                    <i><img src="assests/TV/TV_triage_nopower.png" alt=""></i>
+                </div>
+              <h3>The TV has no power </h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#randomlyRestart">
+                <div class="icon">
+                    <i><img src="assests/TV/TV_triage_onoff.png" alt=""></i>
+                </div>
+              <h3>TV randomly restarts</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#remoteControl">
+                <div class="icon">
+                    <i><img src="assests/TV/tv_triage_slowremote.png" alt=""></i>
+                </div>
+              <h3>Remote Control Issues</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#noaudio">
+                <div class="icon">
+                    <i><img src="assests/TV/tv_triage_noaudio.png" alt=""></i>
+                </div>
+              <h3>No audio, poor audio quality </h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#damageTV">
+                <div class="icon">
+                    <i><img src="assests/TV/tv_triage_damage.png" alt=""></i>
+                </div>
+              <h3>Physical damage</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#flickScreen">
+                <div class="icon">
+                    <i><img src="assests/TV/tv_triage_missingchannel.png" alt=""></i>
+                </div>
+              <h3>Flickering screen/Lines</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#connect">
+                <div class="icon">
+                    <i><img src="assests/TV/tv_triage_externalinput.png" alt=""></i>
+                </div>
+              <h3>HDMI, Cast, Bluetooth</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#reset_container">
+                <div class="icon">
+                    <i><img src="assests/TV/tv_triage_hangfreeze.png" alt=""></i>
+                </div>
+              <h3>Reset TV</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#wifi">
+                <div class="icon">
+                    <i><img src="assests/TV/tv_triage_wifi.png" alt=""></i>
+                </div>
+              <h3>Network & Wifi</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#update">
+                <div class="icon">
+                    <i><img src="assests/TV/tv_triage_firmwareupdate.png" alt=""></i>
+                </div>
+              <h3>Software Update </h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+        </div>
+       
+  <!-- Modal  for Find the serial number -->
+
+  <div class="modal fade" id="findTheSerialN" tabindex="-1" aria-labelledby="findTheSerialN" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="turnOff">Find the Serial Number </h3>
+            <h5>Customer return : It’s a counterfeit item or not the same model (different) as in the website.</h5>
+          </div>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-body">
+              <div class="button_box">
+                <button class="tab_btn"> On the back of your television</button>
+                <button class="tab_btn">TV Details through Menu</button>
+                <div class="line"></div>
+              </div>
+              <div class="content_box">
+                <div class="content show">
+                   <div class="wrapper" id="containerImg">
+                    <span class="step">1</span>
+                    <img src="assests/details TV.png" alt="" class="card_image">
+                    <p class="card_text">
+                        On the back of your television. (silver sticker)
+                    </p>
+                   </div>
+                </div>
+               
+               <div class="content">
+               
+                <div class="wrapper">
+                   <span class="step">1</span>
+                    <img src="assests/TV/01.avif" alt="" class="card_image">
+                    <p class="card_text">
+                      
+                      Press the Home button on your remote control, head to Settings and then navigate to  All Settings
+                    </p>
+                </div>
+                <div class="wrapper">
+                  <span class="step">2</span>
+                    <img src="assests//TV/02.avif" alt="" class="card_image">
+                    <p class="card_text">
+                      Scroll down to Support and then select About This TV from the menu list in the centre.
+                    </p>
+                </div>
+                <div class="wrapper">
+                  <span class="step">3</span>
+                    <img src="assests/TV/03.avif" alt="" class="card_image">
+                    <p class="card_text">
+                      On the About This TV page, you will have all of the TV information on display including the TV serial number, model number and software version
+                    </p>
+                </div>
+               </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal  for the TV has no power -->
+  
+  <div class="modal fade" id="noPower" aria-hidden="true" aria-labelledby="noPower" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="noPower">The TV has no power</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+              <span class="step">1</span>
+              <img src="assests/TV/04.gif" alt="" class="card_image">
+              <p class="card_text">
+                1- Check if the LED on the panel of TV is flashing red.
+              </p>
+            </div>
+          </div>
+            
+          <div class="button_box">
+            <button class="tab_btn">If there is no LED :</button>
+            <button class="tab_btn">If the LED is flashing red</button>
+          </div>
+          <div class="content_box">
+            <div class="content show">
+              <div class="wrapper" id="containerImg">
+                <span class="step">2</span>
+                <img src="assests/TV/06.PNG" alt="" class="card_image">
+                <div class="card_text"> 
+                  1- Disconnect the TV power cable and wait two minutes.
+                  <br>
+                  2- Reconnect the TV power cable and press the [Power] button again on the TV instead of the remote control.
+                </div>
+              </div>
+              <div class="wrapper" id="containerImg">
+                <span class="step">3</span>
+                <img src="assests/TV/05.png" alt="" class="card_image">
+                <div class="card_text">
+                    <p>
+                      3- Check that the TV Energy Saving Switch (at the back n°6)  is ON 
+                    </p>
+                  <div class="videoBtn">
+                    <div class="play"></div>
+                    <p>Play Video</p>
+                  </div>
+                  <div class="videoContainer">
+                    <video controls src="/assests/video/TV/I can’t turn on my Sony TV.mp4"></video>
+                    <span class="close">&#10006; Close Video</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="wrapper" id="containerImg">
+                <span class="step">1</span>
+                <img src="assests/TV/07.jpg" alt="" class="card_image">
+               
+                <div class="card_text"> 
+                  1- Press and hold the power button on the remote control for about 5 seconds.
+                </div>
+              </div>
+              <div class="wrapper" id="containerImg">
+                <span class="step">2</span>
+                <img src="assests/TV/08.jpg" alt="" class="card_image">
+               
+                <div class="card_text"> 
+                  2- The TV should restart automatically.              
+                  <br>
+                  Wait for one minute, and the TV will turn back on. 
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal  for TV randomly restarts -->
+  <div class="modal fade" id="randomlyRestart" aria-hidden="true" aria-labelledby="randomlyRestart" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">TV randomly restarts </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+             <div class="wrapper" id="containerImg">
+                <span class="step">1</span>
+                <img src="assests/TV/turn off randomly.gif" alt="" class="card_image">
+                <p class="card_text">
+                  Update the TV software to the latest version 
+                  <button class="btn btn-primary" data-bs-target="#update"data-bs-toggle="modal" data-bs-dismiss="modal">How to Update a TV</button>
+                </p>
+               
+              </div>
+          </div>
+         
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">2</span>
+               <img src="assests/TV/randomly restarts.jpg" alt="" class="card_image">
+               <p class="card_text">
+                Make sure the AC power cord (mains lead) is properly plugged in.
+               </p>
+             </div>
+         </div>
+         <div class="conatiner">
+          <div class="wrapper" id="containerImg">
+             <span class="step">3</span>
+             <img src="assests/TV/reset.png" alt="" class="card_image">
+             <p class="card_text">
+              Reset the TV to the original factory settings
+               <button class="btn btn-primary" data-bs-target="#reset_container" data-bs-toggle="modal" data-bs-dismiss="modal">How to reset a TV</button>
+             </p>
+            
+           </div>
+         </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal  for Remote Control Issues -->
+  <div class="modal fade" id="remoteControl" aria-hidden="true" aria-labelledby="remoteControl" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Reset">Remote Control Issues </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">1</span>
+               <img src="assests/TV/remote control damaged.png" alt="" class="card_image">
+               <p class="card_text">
+                Check for physical damage
+               </p>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">2</span>
+               <img src="assests/TV/SLOW .png" alt="" class="card_image">
+               <p class="card_text">
+                Slow Response Time :
+                Remove any kind of obstacle          
+               </p>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">3</span>
+               <img src="assests/TV/reset the remote.png" alt="" class="card_image">
+               <div class="card_text">
+                <p> 1- Remove the batteries from the remote </p>
+               <br>
+               <p>2- Press the power button of the remote for three seconds
+              </p>
+               <br>
+               <p> 3- Install the batteries into the remote, and try using it again
+              </p>
+               </div>
+               
+             </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal  for No audio, poor audio quality -->
+  <div class="modal fade" id="noaudio" aria-hidden="true" aria-labelledby="noaudio" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">There is no sound, poor sound, or low volume coming from the TV speakers.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+             <div class="wrapper" id="containerImg">
+                <span class="step">1</span>
+                <img src="assests/TV/turn off randomly.gif" alt="" class="card_image">
+                <div class="card_text">
+                  <p>Try increasing the volume of your TV.</p>
+                  <p>Make sure the TV isn't muted.</p>
+                  <p>Try performing a soft reset</p>
+                  <button class="btn btn-primary" data-bs-target="#softReset"data-bs-toggle="modal" data-bs-dismiss="modal">How to perform a soft reset</button>
+                </div>
+              </div>
+          </div>
+         <div class="conatiner">
+          <div class="wrapper" id="containerImg">
+             <span class="step">2</span>
+             <img src="assests/TV/reset.png" alt="" class="card_image">
+             <p class="card_text">
+              If there is still no sound, reset the TV to factory settings.
+               <button class="btn btn-primary"  id="btnNoAudio" data-bs-target="#reset_container" data-bs-toggle="modal" data-bs-dismiss="modal">How to reset a TV</button>
+             </p>
+            
+           </div>
+       </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal  for Physical damage -->
+<div class="modal fade" id="damageTV" aria-hidden="true" aria-labelledby="damageTV" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Reset">Physical damage </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="conatiner">
+          <div class="wrapper" id="containerImg">
+            <span class="step">1</span>
+          <img src="assests/TV/damaged01.jpg" alt="" class="card_image">
+          <div class="card_text"> 
+            <p>Firstly, Always do a Visual inspection of the packaging </p>
+            <p>If it has any signs of damages or wet.  </p>
+          </div>
+        </div>
+        </div>
+        <div class="conatiner">
+           <div class="wrapper" id="containerImg">
+            <span class="step">2</span>
+          <img src="assests/TV/s-l400.jpg" alt="" class="card_image">
+         
+          <div class="card_text"> 
+            <p>Then Check your TV screen for physical damage  (dents, tears, cracks, etc.).</p>
+          </div>
+        </div>
+        </div>
+        
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal  for Flickering screen/Lines -->
+<div class="modal fade" id="flickScreen" aria-hidden="true" aria-labelledby="flickScreen" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Reset">Flickering screen/Lines</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="conatiner">
+          <div class="wrapper" id="containerImg">
+            <span class="step">1</span>
+          <img src="assests/TV/VERTICAL_LINES.png" alt="" class="card_image">
+          <div class="card_text"> 
+            <p style="color: rgb(117, 14, 14); font-weight: bold;"> <u>If you can't observe any physical damage. </u></p>
+            <p>Turn off the TV, keep it unplugged for 30 seconds and Plug it back in to turn it on again. </p>
+          </div>
+        </div>
+        </div>
+        <div class="conatiner">
+           <div class="wrapper" id="containerImg">
+            <span class="step">2</span>
+          <img src="assests/TV/cable.jpeg" alt="" class="card_image">
+         
+          <div class="card_text"> 
+            <p>Check the cable connection or try a different cable</p>
+          </div>
+        </div>
+        </div>
+        <div class="conatiner">
+          <div class="wrapper" id="containerImg">
+             <span class="step">3</span>
+             <img src="assests/TV/turn off randomly.gif" alt="" class="card_image">
+             <p class="card_text">
+               Update the TV software to the latest version 
+               <button class="btn btn-primary" data-bs-target="#update"data-bs-toggle="modal" data-bs-dismiss="modal">How to Update a TV</button>
+             </p>
+           </div>
+        </div>
+        <div class="conatiner">
+          <div class="wrapper" id="containerImg">
+             <span class="step">3</span>
+             <img src="assests/TV/reset.png" alt="" class="card_image">
+             <p class="card_text">
+              Reset the TV to the original factory settings
+               <button class="btn btn-primary" data-bs-target="#reset_container"data-bs-toggle="modal" data-bs-dismiss="modal">How to reset a TV</button>
+             </p>
+            
+           </div>
+        </div>
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal  for HDMI, Cast, Bluetooth -->
+
+<div class="modal fade" id="connect" aria-hidden="true" aria-labelledby="noPower" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="noPower">HDMI, Bluetooth</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="conatiner">
+          <div class="wrapper" id="containerImg">
+            <img src="assests/TV/triage_TV external connection.gif" alt="" class="card_image">
+            <div class="card_text"> 
+              -> There is no picture when using an HDMI connection.
+              <br>
+              -> Cannot connect Bluetooth/wireless headphones to a television
+            </div>
+          </div>
+        </div>
+          
+        <div class="button_box">
+          <button class="tab_btn">HDMI :</button>
+          <button class="tab_btn">Bluetooth</button>
+        </div>
+        <div class="content_box">
+          <div class="content show">
+            <div class="wrapper" id="containerImg">
+              <span class="step">1</span>
+              <img src="assests/TV/HDMI.PNG" alt="" class="card_image">
+              <div class="card_text"> 
+                <p>1-Make sure the TV is set to the correct video input to receive the HDMI signal.</p>
+                <br>
+                <p> 2- Try using a different HDMI cable.</p>
+              </div>
+            </div>
+            <div class="conatiner">
+              <div class="wrapper" id="containerImg">
+                 <span class="step">2</span>
+                 <img src="assests/TV/reset.png" alt="" class="card_image">
+                 <p class="card_text">
+                  If there is still no picture, reset the TV to factory settings.
+                   <button class="btn btn-primary" data-bs-target="#reset_container"data-bs-toggle="modal" data-bs-dismiss="modal">How to reset a TV</button>
+                 </p>
+                
+               </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="wrapper" id="containerImg">
+              <span class="step">1</span>
+              <img src="assests/TV/bluetooth.png" alt="" class="card_image">
+             
+              <div class="card_text"> 
+                <p>- Press the HOME button.</p> 
+                <p>- Select  Settings ― Bluetooth setting ― Add device.</p>
+                  <p>- Press the ENTER button.</p>
+                  <div class="videoBtn">
+                    <div class="play"></div>
+                    <p>Play Video</p>
+                  </div>
+                  <div class="videoContainer">
+                    <video controls src="/assests/video/TV/Bluetooth.mp4"></video>
+                    <span class="close">&#10006; Close Video</span>
+                  </div>
+              </div>
+            </div>
+            <div class="wrapper" id="containerImg">
+              <span class="step">2</span>
+              <img src="assests/TV/bluetooth 2.jpg" alt="" class="card_image">
+             
+              <div class="card_text"> 
+                Select the device name and press the ENTER button. 
+              </div>
+            </div>
+            <div class="wrapper" id="containerImg">
+              <span class="step">3</span>
+              <img src="assests/TV/bluetooth 3.jpg" alt="" class="card_image">
+              <div class="card_text"> 
+                The pairing is complete.
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal  for Network & Wifi -->
+
+<div class="modal fade" id="wifi" aria-hidden="true" aria-labelledby="wifi" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="reset">Network & Wifi </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="conatiner">
+          <div class="wrapper" id="containerImg">
+             <span class="step">1</span>
+             <img src="assests/TV/wifi.png" alt="" class="card_image">
+             <div class="card_text">
+              <p> Select all Settings, then Connection</p>
+            <div class="videoBtn">
+              <div class="play"></div>
+              <p>Play Video</p>
+            </div>
+            <div class="videoContainer">
+              <video controls src="/assests/video/TV/How to connect your TV to Wi-Fi _ Samsung US.mp4"></video>
+              <span class="close">&#10006; Close Video</span>
+            </div>
+             </div>
+           </div>
+        </div>
+        <div class="conatiner">
+          <div class="wrapper" id="containerImg">
+             <span class="step">2</span>
+             <img src="assests/TV/wifi 2.png" alt="" class="card_image">
+             <div class="card_text">
+              <p>-Select Network</p>
+              <p>-Open Network settings and Select Wireless</p>
+             </div>
+           </div>
+        </div>
+        <div class="conatiner">
+          <div class="wrapper" id="containerImg">
+             <span class="step">3</span>
+             <img src="assests/TV/wifi 3.png" alt="" class="card_image">
+             <div class="card_text">
+              <p>-Select the name of your Wi-Fi</p>
+              <p>-Enter the network password</p>
+             </div>
+           </div>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+ </div>
+
+  <!-- Modal  for Soft Reset -->
+  <div class="modal fade" id="softReset" aria-hidden="true" aria-labelledby="softReset" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Reset">Soft Reset </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+              <span class="step">1</span>
+            <img src="assests/TV/07.jpg" alt="" class="card_image">
+           
+            <div class="card_text"> 
+              1- Press and hold the power button on the remote control for about 5 seconds.
+            </div>
+          </div>
+          </div>
+          <div class="conatiner">
+             <div class="wrapper" id="containerImg">
+              <span class="step">2</span>
+            <img src="assests/TV/08.jpg" alt="" class="card_image">
+           
+            <div class="card_text"> 
+              2- The TV should restart automatically.              
+              <br>
+              Wait for one minute, and the TV will turn back on. 
+            </div>
+          </div>
+          </div>
+          
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-primary" data-bs-target="#noaudio" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal  for Update -->
+   <div class="modal fade" id="update" aria-hidden="true" aria-labelledby="update" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Reset">Update TV </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">1</span>
+               <img src="assests/TV/update 1.jpg" alt="" class="card_image">
+               <div class="card_text">
+                <p> Go to Settings and click it.</p>
+              <div class="videoBtn">
+                <div class="play"></div>
+                <p>Play Video</p>
+              </div>
+              <div class="videoContainer">
+                <video controls src="/assests/video/TV/How to Update the Software on your Samsung TV.mp4"></video>
+                <span class="close">&#10006; Close Video</span>
+              </div>
+               </div>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">2</span>
+               <img src="assests/TV/update 2.webp" alt="" class="card_image">
+               <p class="card_text">
+                Scroll to the Support tab, Select Software Update
+               </p>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">3</span>
+               <img src="assests/TV/update 3.avif" alt="" class="card_image">
+               <p class="card_text">
+               Select Update Now
+               </p>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">4</span>
+               <img src="assests/TV/update 4.webp" alt="" class="card_image">
+               <p class="card_text">
+                New updates will be downloaded and installed.
+               </p>
+             </div>
+          </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-primary" id="updatebtn" data-bs-target="#randomlyRestart" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+          
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <!-- Modal  for Reset -->
+   <div class="modal fade" id="reset_container" aria-hidden="true" aria-labelledby="reset" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Reset">Reset TV </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">1</span>
+               <img src="assests/TV/reset 1.jpeg" alt="" class="card_image">
+               <div class="card_text">
+                <p> Open Settings</p>
+              <div class="videoBtn">
+                <div class="play"></div>
+                <p>Play Video</p>
+              </div>
+              <div class="videoContainer">
+                <video controls src="/assests/video/TV/How to reset your TV _ Samsung US.mp4"></video>
+                <span class="close">&#10006; Close Video</span>
+              </div>
+               </div>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">2</span>
+               <img src="assests/TV/reset 2.jpeg" alt="" class="card_image">
+               <p class="card_text">
+                Navigate to and select General
+               </p>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">3</span>
+               <img src="assests/TV/reset 3.jpeg" alt="" class="card_image">
+               <p class="card_text">
+                Navigate to and select Reset
+               </p>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">3</span>
+               <img src="assests/TV/reset 4.jpeg" alt="" class="card_image">
+               <p class="card_text">
+                Navigate to and select Yes
+               </p>
+             </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-primary" id="resetbutton" data-bs-target="#randomlyRestart" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+          
+        </div>
+      </div>
+    </div>
+   </div>
+   
+    </div>
+    </main>
+    
+    <footer class="footer">
+      <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> - Jumia</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+</body>
+</html>

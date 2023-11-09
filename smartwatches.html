@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assests/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>AS QC training</title>
+
+     <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+
+    <!--------Bootstrap--------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/fbcf1507ca.js" crossorigin="anonymous"></script>
+</head>
+<body class="home">
+
+    <!--------- Preloader Start --------->
+    <div id="preloader">
+        <div class="load">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!--------- Preloader End --------->
+    <!--------- Header Start --------->
+    <header class="header-section header-sticky">
+        <nav class="navBar-container">
+            <a href="#">
+                <img src="assests/favicon-32x32.png" alt="WMT" class="logo-img">
+            </a>
+            <div class="links">
+              <a href="index.html" class="active">Home</a>
+              <a href="QC.html">QC general instructions</a>
+              <a href="mobile.html">Mobile Phone</a>
+              <a href="tv.html">Television</a>
+              <a href="smartwatches.html">Smartwatches</a>
+              <a href="headphones.html">Headphones</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <div class="home_container">
+            <div class="cardsContainer">
+                <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#findIMEIN">
+                <div class="icon mobile">
+                    <i><img src="assests/smartwatch/communication (1).png" alt=""></i>
+                </div>
+                <h3>Enable notifications</h3>
+                <div class="go-corner">
+                <div class="go-arrow">
+                    →
+                </div>
+                </div>
+                </a>
+                <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#screen">
+                    <div class="icon mobile">
+                        <i><img src="assests/smartwatch/smartwatch.png" alt=""></i>
+                    </div>
+                <h3>Screen failure</h3>
+                <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                    →
+                    </div>
+                </div>
+                </a>
+                <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#batterie">
+                    <div class="icon mobile">
+                    <i><img src="assests/smartwatch/SCREEN.png" alt=""></i>
+                    </div>
+                <h3>Batterry issue</h3>
+                <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                    →
+                    </div>
+                </div>
+                </a>
+                <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#pair">
+                    <div class="icon mobile">
+                        <i><img src="assests/smartwatch/connection.png" alt=""></i>
+                    </div>
+                <h3>Pairing or Connection issues</h3>
+                <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                    →
+                    </div>
+                </div>
+                </a>
+                <a class="card-item" href="#updatemobile" data-bs-toggle="modal" data-bs-target="#updatemobile">
+                    <div class="icon mobile">
+                        <i><img src="assests/smartwatch/insurance.png" alt=""></i>
+                    </div>
+                <h3>System Update</h3>
+                <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                    →
+                    </div>
+                </div>
+                </a>
+                <a class="card-item" href="#resetMobile" data-bs-toggle="modal" data-bs-target="#resetMobile" >
+                <div class="icon mobile">
+                    <i><img src="assests/smartwatch/gear.png" alt=""></i>
+                </div>
+                <h3>Factory Reset</h3>
+                <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
+                </div>
+                </div>
+            </a>
+            </div>
+
+    <!-- Modal  for Enable notification -->
+    <div class="modal fade" id="findIMEIN" tabindex="-1" aria-labelledby="findIMEIN" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl ">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="modal-title">
+                <h3 id="turnOff">Enable notification</h3>
+                <h5>Customer’s Return Reason : I’m not getting notifications on my watch.            </h5>
+            </div>
+            
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="conatiner">
+                    <div class="wrapper" id="containerImg">
+                        <span class="step">1</span>
+                        <img src="assests/smartwatch/turn-off-do-not-disturb-on-apple-watch.jpg" alt="" class="card_image">
+                        <div class="card_text">
+                            <p>- Make sure your phone’s Bluetooth is on and your smartwatch is synced to your device.
+                            </p>
+                            <p>- Check you haven't enabled Notify App silence mode, or any sleeping time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="conatiner">
+                    <div class="wrapper" id="containerImg">
+                        <span class="step">2</span>
+                        <img src="assests/smartwatch/Tap-Notifications-Activity-Allow-Notifications.jpg" alt="" class="card_image">
+                        <div class="card_text">
+                            <p>- check that notifications are enabled
+                            </p>
+                            <p>- Check you haven't enabled Notify App silence mode, or any sleeping time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="conatiner">
+                    <div class="wrapper mobile" id="containerImg">
+                        <span class="step">3</span>
+                        <div class="image_container">
+                            <img src="assests/smartwatch/01.jpg" alt="" class="card_image">
+                            <img src="assests/smartwatch/02.jpg" alt="" class="card_image">
+                        </div>
+                        <div class="card_text">
+                            <p>Open Settings. Tap Apps and notifications > Notifications.</p>
+                            <p>- Tap the app name and turn notifications ON</p>
+                            <div class="videoBtn">
+                                <div class="play"></div>
+                                <p>Play Video</p>
+                            </div>
+                            <div class="videoContainer">
+                                <video controls src="/assests/video/SMARTWATCH/How to Enable Phone Notification in smartwatch– Show Notifications from Android (2).mp4"></video>
+                                <span class="close">&#10006; Close Video</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    
+    <!-- Modal  for Pairing or Connection issues -->
+    <div class="modal fade" id="pair" tabindex="-1" aria-labelledby="pair" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl ">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="modal-title">
+                <h3 id="turnOff">Pairing or Connection issues</h3>
+                <h5>Customer’s Return Reason : How to connect SmartWatch to the Phone </h5>
+            </div>
+            
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="button_box">
+                    <button class="tab_btn"> Android</button>
+                    <button class="tab_btn">IPHONE & IOS</button>
+                    <div class="line"></div>
+                </div>
+                <div class="content_box">
+                    <div class="content show">
+                        <div class="wrapper mobile" id="containerImg">
+                        <span class="step">1</span>
+                        <div class="image_container">
+                            <img src="assests/smartwatch/app.jpg" alt="" >
+                            <img src="assests/smartwatch/applogIN.jpg" alt="" class="card_image"> 
+                        </div>
+                        <div class="card_text">
+                        <p>- After the user was logged in </p>
+                        <p>- Tap Settings.</p>
+                        <div class="videoBtn">
+                        <div class="play"></div>
+                        <p>Play Video</p>
+                        </div>
+                        <div class="videoContainer">
+                        <video controls src="/assests/video/SMARTWATCH/How to Connect Xiaomi Redmi Watch 2 Lite with Android Phone_.mp4"></video>
+                        <span class="close">&#10006; Close Video</span>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="wrapper mobile" id="containerImg">
+                            <span class="step">2</span>
+                            <div class="image_container">
+                                <img src="assests/smartwatch/device.jpg" alt="" >
+                                <img src="assests/smartwatch/chose device.jpg" alt="" class="card_image"> 
+                            </div>
+                            <div class="card_text">
+                            <p>- Tap on the Add device button. </p>
+                            <p>- Select your device from the list</p>
+                            </div>
+                        </div>
+                        <div class="wrapper mobile" id="containerImg">
+                            <span class="step">3</span>
+                            <div class="image_container">
+                                <img src="assests/smartwatch/xiaomi-redmi-watch-2-lite.jpg" alt="" >
+                                <img src="assests/smartwatch/pair and.jpg" alt="" class="card_image"> 
+                            </div>
+                            <div class="card_text">
+                            <p>- Allow the permission for the following options </p>
+                            <p>-Confirm the pairing by tapping on the OK button in the application and the Checkmark on the watch.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="wrapper mobile" id="containerImg">
+                            <span class="step">1</span>
+                            <img src="assests/smartwatch/pair fail i.png" alt="" class="card_image">
+                            <div class="card_text">
+                            <p>- Press and hold the side button (below the digital crown) on your Watch until you see the Apple logo. </p>
+                            </div>
+                        </div>
+                        <div class="wrapper" id="containerImg">
+                            <span class="step">2</span>
+                            <img src="assests/smartwatch/pair iphone.jpg" alt="" class="card_image">
+                            <div class="card_text">
+                            <p>- Once you see the pop-up on your iPhone, tap Continue. </p>
+                            <p>- Select Set Up for Myself or Set Up for a Family Member</p>
+                            <p>- Position your Apple Watch in the Frame. </p>
+                            <div class="videoBtn">
+                            <div class="play"></div>
+                            <p>Play Video</p>
+                            </div>
+                            <div class="videoContainer">
+                            <video controls src="/assests/video/SMARTWATCH/How to pair and set up your Apple Watch _ Apple Support.mp4"></video>
+                            <span class="close">&#10006; Close Video</span>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="wrapper mobile" id="containerImg">
+                            <span class="step">3</span>
+                            <img src="assests/smartwatch/paired.jpg" alt="" class="card_image">
+                            <div class="card_text">
+                            <p>- Your Apple Watch is now paired.   </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal  for Screen failure -->
+    <div class="modal fade" id="screen" aria-hidden="true" aria-labelledby="screen" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="modal-title">
+                <h3 id="turnOff">Screen failure </h3>
+                <h5>Customer’s Return Reason : If your watch’s display has streaks, appears to be pixelated, or flickers</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <div class="conatiner">
+                <div class="wrapper mobile" id="containerImg">
+                <span class="step">1</span>
+                <div class="image_container">
+                    <img src="assests/smartwatch/restart.webp" alt="" class="card_image">
+                    <img src="assests/smartwatch/start.webp" alt="" class="card_image">
+                </div>
+                <div class="card_text">
+                    <p>- Force Restart </p>
+                    <p>- Continue holding the buttons when the power screen appears. </p>
+                    <p>- When the screen goes black, release the Home and back buttons, and your watch will automatically restart.</p>
+                </div>
+                </div>
+            </div>
+            <div class="conatiner">
+                <div class="wrapper" id="containerImg">
+                <span class="step">2</span>
+                <img src="assests/smartwatch/update.webp" alt="" class="card_image">
+                <div class="card_text">
+                    <p>Check for software updates. </p>
+                    <button class="btn btn-primary" data-bs-target="#updatemobile"data-bs-toggle="modal" data-bs-dismiss="modal">How to Update a smartwatch</button>
+                </div>
+                </div>
+            </div>
+            <div class="conatiner">
+                <div class="wrapper" id="containerImg">
+                <span class="step">3</span>
+                <img src="assests/smartwatch/reset.jpg" alt="" class="card_image">
+                <p class="card_text">
+                    Reset the smartwatch to the original factory settings
+                    <button class="btn btn-primary" data-bs-target="#resetMobile"data-bs-toggle="modal" data-bs-dismiss="modal">How to reset a smartwatch</button>
+                </p>
+                
+                </div>
+            </div>
+            
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-primary" id="resetbtn" data-bs-target="#randomlyRestart" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal  for Batterry issue -->
+    <div class="modal fade" id="batterie" aria-hidden="true" aria-labelledby="batterie" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="modal-title">
+                <h3 id="turnOff">Batterry issue </h3>
+                <h5>Customer’s Return Reason : refuses to charge, the battery is draining so fast</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <div class="conatiner">
+                <div class="wrapper mobile" id="containerImg">
+                <span class="step">1</span>
+                <img src="assests/smartwatch/charger.jpeg" alt="" class="card_image">
+                <div class="card_text">
+                    <p>- Check for damage to the charger or the charging cable. If you find any, use an alternative.</p>
+                </div>
+                </div>
+            </div>
+            <div class="conatiner">
+                <div class="wrapper" id="containerImg">
+                <span class="step">2</span>
+                <img src="assests/smartwatch/update.webp" alt="" class="card_image">
+                <div class="card_text">
+                    <p>Check for software updates. </p>
+                    <button class="btn btn-primary" data-bs-target="#updatemobile"data-bs-toggle="modal" data-bs-dismiss="modal">How to Update a smartwatch</button>
+                </div>
+                </div>
+            </div>
+            <div class="conatiner">
+                <div class="wrapper" id="containerImg">
+                <span class="step">3</span>
+                <img src="assests/smartwatch/reset.jpg" alt="" class="card_image">
+                <p class="card_text">
+                    Reset the smartwatch to the original factory settings
+                    <button class="btn btn-primary" data-bs-target="#resetMobile"data-bs-toggle="modal" data-bs-dismiss="modal">How to reset a smartwatch</button>
+                </p>
+                
+                </div>
+            </div>
+            
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-primary" id="resetbtn" data-bs-target="#randomlyRestart" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- Modal  for System Update -->
+    <div class="modal fade" id="updatemobile" aria-hidden="true" aria-labelledby="update" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="modal-title">
+                <h3 id="turnOff">System Update</h3>
+                <h5>Battery / performance issue,bug fixes    </h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="button_box">
+                    <button class="tab_btn"> Android</button>
+                    <button class="tab_btn">IPHONE & IOS</button>
+                    <div class="line"></div>
+                </div>
+                <div class="content_box">
+                    <div class="content show">
+                        <div class="wrapper mobile" id="containerImg">
+                        <span class="step">1</span>
+                        <img src="assests/smartwatch/10.png" alt="" class="card_image">
+                        <div class="card_text">
+                        <p>-Press the Home key (Power key) </p>
+                        <p>- Tap Settings.</p>
+                        <div class="videoBtn">
+                        <div class="play"></div>
+                        <p>Play Video</p>
+                        </div>
+                        <div class="videoContainer">
+                        <video controls src="/assests/video/SMARTWATCH/Update software on your Galaxy Watch3 and older watch models without a phone - Samsung US.mp4"></video>
+                        <span class="close">&#10006; Close Video</span>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="wrapper mobile" id="containerImg">
+                            <span class="step">2</span>
+                            <img src="assests/smartwatch/09.png" alt="" class="card_image">
+                            <p class="card_text">
+                            Tap General, and then tap Watch software update
+                            </p>
+                        </div>
+                    </div>
+            <div class="content">
+                <div class="wrapper" id="containerImg">
+                    <span class="step">1</span>
+                    <img src="assests/smartwatch/iphone01.jpg" alt="" class="card_image">
+                    <div class="card_text">
+                    <p>- Open Settings on your Apple Watch. </p>
+                    <p>- Tap General.</p>
+                    <p>- Navigate to Software Update.</p>
+                    </div>
+                </div>
+                <div class="wrapper" id="containerImg">
+                    <span class="step">2</span>
+                    <img src="assests/smartwatch/i022.jpg" alt="" class="card_image">
+                    <div class="card_text">
+                    <p>- If an update is available, tap Install. </p>
+                    <p>- Tap Proceed.</p>
+                    <p>- The Apple Watch will restart once the update is installed.</p>
+                    <div class="videoBtn">
+                    <div class="play"></div>
+                    <p>Play Video</p>
+                    </div>
+                    <div class="videoContainer">
+                    <video controls src="/assests/video/SMARTWATCH/How to update your Apple Watch _ Apple Support.mp4"></video>
+                    <span class="close">&#10006; Close Video</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal  for Factory Reset -->
+    <div class="modal fade" id="resetMobile" aria-hidden="true" aria-labelledby="resetMobile" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="modal-title">
+                <h3 id="turnOff">Factory Reset </h3>
+                <h5>Customer’s Return Reason : Blank or frozen screen, keypad / touchscreen problems, can't receive calls and device won't sync.</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <div class="conatiner">
+                <div class="wrapper mobile" id="containerImg">
+                <span class="step">1</span>
+                <img src="assests/smartwatch/03-remov.png" alt="" class="card_image">
+                <div class="card_text">
+                    <p>- press the Side button again to open the menu. </p>
+                <div class="videoBtn">
+                    <div class="play"></div>
+                    <p>Play Video</p>
+                </div>
+                <div class="videoContainer">
+                    <video controls src="/assests/video/TV/How to reset your TV _ Samsung US.mp4"></video>
+                    <span class="close">&#10006; Close Video</span>
+                </div>
+                </div>
+                </div>
+            </div>
+            <div class="conatiner">
+                <div class="wrapper mobile" id="containerImg">
+                <span class="step">2</span>
+                <div class="image_container">
+                        <img src="assests/smartwatch/05.png" alt="" class="card_image">
+                        <img src="assests/smartwatch/06.png" alt="" class="card_image">
+                    </div>
+                <div class="card_text">
+                    <p>Tap on the Settings icon.</p>
+                    <p>Then, scroll down and tap on the System option.</p>
+                </div>
+                </div>
+            </div>
+            <div class="conatiner">
+                <div class="wrapper mobile" id="containerImg">
+                <span class="step">3</span>
+                <div class="image_container">
+                        <img src="assests/smartwatch/07.jpg" alt="" class="card_image">
+                        <img src="assests/smartwatch/08.png" alt="" class="card_image">
+                    </div>
+                <p class="card_text">
+                    Select Erase all data (factory reset) <p>
+                </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-primary" id="resetbtn" data-bs-target="#randomlyRestart" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    
+        </div>
+    </main>
+    
+    <footer class="footer">
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> - Jumia</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+</body>
+</html>

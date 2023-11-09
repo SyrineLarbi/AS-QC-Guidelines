@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assests/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>AS QC training</title>
+
+     <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+
+    <!--------Bootstrap--------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/fbcf1507ca.js" crossorigin="anonymous"></script>
+</head>
+<body class="home">
+
+    <!--------- Preloader Start --------->
+    <div id="preloader">
+        <div class="load">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!--------- Preloader End --------->
+    <!--------- Header Start --------->
+    <header class="header-section header-sticky">
+        <nav class="navBar-container">
+            <a href="#">
+                <img src="assests/favicon-32x32.png" alt="WMT" class="logo-img">
+            </a>
+            <div class="links">
+              <a href="index.html" class="active">Home</a>
+              <a href="QC.html">QC general instructions</a>
+              <a href="mobile.html">Mobile Phone</a>
+              <a href="tv.html">Television</a>
+              <a href="smartwatches.html">Smartwatches</a>
+              <a href="headphones.html">Headphones</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+<div class="home_container">
+        <div class="cardsContainer">
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#findIMEIN">
+              <div class="icon mobile">
+                  <i><img src="assests/mobile/antivirus.png" alt=""></i>
+              </div>
+            <h3>Find the IMEI Number</h3>
+            <div class="go-corner">
+              <div class="go-arrow">
+                →
+              </div>
+            </div>
+             </a>
+            <a class="card-item" href="#recoveryMode" data-bs-toggle="modal" data-bs-target="#recoveryMode">
+                <div class="icon mobile">
+                    <i><img src="assests/mobile/notice.png" alt=""></i>
+                </div>
+              <h3>Screen failure</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#resetMobile" data-bs-toggle="modal" data-bs-target="#resetMobile">
+                <div class="icon mobile">
+                    <i><img src="assests/mobile/communication.png" alt=""></i>
+                </div>
+              <h3>Phone does not ring</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#performanceTest" data-bs-toggle="modal" data-bs-target="#performanceTest">
+                <div class="icon mobile">
+                  <i><img src="assests/mobile/setting.png" alt=""></i>
+                </div>
+              <h3>Abnormal shutdown</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#performanceTest" data-bs-toggle="modal" data-bs-target="#performanceTest">
+                <div class="icon mobile">
+                  <i><img src="assests/mobile/repair.png" alt=""></i>
+                </div>
+              <h3>Batterry issue</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#performanceTest" data-bs-toggle="modal" data-bs-target="#performanceTest">
+                <div class="icon mobile">
+                    <i><img src="assests/mobile/video-camera.png" alt=""></i>
+                </div>
+              <h3>Camera issue</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#performanceTest" data-bs-toggle="modal" data-bs-target="#performanceTest">
+                <div class="icon mobile">
+                    <i><img src="assests/mobile/network.png" alt=""></i>
+                </div>
+              <h3>Network connection issues</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#recoveryMode" data-bs-toggle="modal" data-bs-target="#recoveryMode">
+                <div class="icon mobile">
+                    <i><img src="assests/mobile/touch-screen-phone.png" alt=""></i>
+                </div>
+              <h3>Unresponsive touch screen</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#updatemobile" data-bs-toggle="modal" data-bs-target="#updatemobile">
+                <div class="icon mobile">
+                    <i><img src="assests/mobile/update.png" alt=""></i>
+                </div>
+              <h3>System Update</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#resetMobile" data-bs-toggle="modal" data-bs-target="#resetMobile" >
+              <div class="icon mobile">
+                  <i><img src="assests/mobile/reset.png" alt=""></i>
+              </div>
+            <h3>Factory Reset</h3>
+            <div class="go-corner" href="#">
+              <div class="go-arrow">
+                →
+              </div>
+            </div>
+          </a>
+          <a class="card-item" href="#DeviceInfo" data-bs-toggle="modal" data-bs-target="#DeviceInfo">
+            <div class="icon mobile">
+                <i><img src="assests/mobile/info.png" alt=""></i>
+            </div>
+          <h3>The Device Informations </h3>
+          <div class="go-corner" href="#">
+            <div class="go-arrow">
+              →
+            </div>
+          </div>
+        </a>
+        </div>
+
+  <!-- Modal  for Find the IMEI Number -->
+  <div class="modal fade" id="findIMEIN" tabindex="-1" aria-labelledby="findIMEIN" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="turnOff">Find the IMEI Number </h3>
+            <h5>Customer return : It’s a counterfeit item</h5>
+          </div>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-body">
+              <div class="button_box">
+                <button class="tab_btn">Checking the Packaging</button>
+                <button class="tab_btn">Open the Phone app</button>
+                <div class="line"></div>
+              </div>
+              <div class="content_box">
+                <div class="content show">
+                   <div class="wrapper" id="containerImg">
+                    <span class="step">1</span>
+                    <img src="assests/mobile/imei box.jpg" alt="" class="card_image">
+                    <p class="card_text">
+                      Checking the Packaging
+                    </p>
+                   </div>
+                </div>
+               
+               <div class="content">
+                <div class="wrapper">
+                   <span class="step">1</span>
+                    <img src="assests/mobile/01-j.jpeg" alt="" class="card_image">
+                    <p class="card_text">Dial *#06#</p>
+                </div>
+                <div class="wrapper">
+                  <span class="step">2</span>
+                    <img src="assests/mobile/02-j.jpeg" alt="" class="card_image">
+                    <p class="card_text"> Your IMEI/MEID number will appear in a new window on your phone</p>
+                </div>
+               </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal  for Recovery Mode -->
+  <div class="modal fade" id="recoveryMode" aria-hidden="true" aria-labelledby="update" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Recovery Mode </h5>
+         
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+               <span class="step">1</span>
+               <img src="assests/mobile/s01.png" alt="" class="card_image">
+               <div class="card_text">
+                <p> - Press and hold Volume Up + Power button while the device is powered off.</p>
+                <p>- Release the buttons when you see the logo </p>
+                <p>-  You can find in this <a href="https://support.mobiledit.com/portal/en/kb/articles/how-to-boot-into-recovery-android" target="_blank">link</a> most major manufacturers' hotkey combinations and instructions: </p>
+              <div class="videoBtn">
+                <div class="play"></div>
+                <p>Play Video</p>
+              </div>
+              <div class="videoContainer">
+                <video controls src="/assests/video/mobile/recovery mode.mp4"></video>
+                <span class="close">&#10006; Close Video</span>
+              </div>
+               </div>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">2</span>
+               <img src="assests/mobile/s02.png" alt="" class="card_image">
+               <p class="card_text">
+                Use the volume buttons to highlight "Wipe Data/Factory Reset" and press the Power button to select it.
+               </p>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">3</span>
+               <img src="assests/mobile/s03.jpg" alt="" class="card_image">
+               <p class="card_text">
+                Finally, pick Reboot System
+               </p>
+             </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+
+   <!--The Device Informations-->
+   <div class="modal fade" id="DeviceInfo" tabindex="-1" aria-labelledby="DeviceInfo" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="turnOff">The Device Informations </h3>
+            <h5>Customer return : It’s a counterfeit item, not the same model, Different storage space...etc</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-body">
+              <div class="button_box">
+                <button class="tab_btn">Android</button>
+                <button class="tab_btn">IPHONE & IOS</button>
+                <div class="line"></div>
+              </div>
+              <div class="content_box">
+                <div class="content show">
+                   <div class="wrapper mobile" id="containerImg">
+                    <span class="step">1</span>
+                    <div class="image_container">
+                      <img src="assests/mobile/parametre.jpg" alt="" class="card_image">
+                      <img src="assests/mobile/phonemodel.jpg" alt="" class="card_image">
+                     </div>
+                    <div class="card_text">
+                     <p>Go to Settings app.</p>
+                     <p>Click on My phone.</p>
+                    </div>
+                   </div>
+                </div>
+               
+               <div class="content">
+                <div class="wrapper mobile">
+                   <span class="step">1</span>
+                   <div class="image_container">
+                    <img src="assests/mobile/iphone01.png" alt="" >
+                    <img src="assests/mobile/iphone.png" alt="" class="card_image"> 
+                  </div>
+                    <p class="card_text">Go to the Settings app > General > About.</p>
+                </div>
+                <div class="wrapper mobile">
+                  <span class="step">2</span>
+                  <img src="assests/mobile/iphone02.jpeg" alt="" class="card_image">
+                    <p class="card_text"> Look at the back of the iPhone</p>
+                </div>
+               </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal  for Performance Tests  -->
+   <div class="modal fade" id="performanceTest" aria-hidden="true" aria-labelledby="randomlyRestart" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="turnOff">Performance Tests</h3>
+            <h5>Performance issue / unable to make calls / Camera issue.</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+             <div class="wrapper" id="containerImg">
+                <span class="step">1</span>
+                <img src="assests/mobile/Restart Device.jpeg" alt="" class="card_image">
+                <div class="card_text">
+                  <p>Restart Device</p>
+                </div>
+               
+              </div>
+          </div>
+         
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">2</span>
+               <img src="assests/mobile/syst update.jpeg" alt="" class="card_image">
+               <div class="card_text">
+                <p>Update to latest Software </p>
+                <button class="btn btn-primary" data-bs-target="#updatemobile"data-bs-toggle="modal" data-bs-dismiss="modal">How to Update a TV</button>
+               </div>
+             </div>
+          </div>
+         <div class="conatiner">
+          <div class="wrapper" id="containerImg">
+             <span class="step">3</span>
+             <img src="assests/mobile/reset mobile.png" alt="" class="card_image">
+             <p class="card_text">
+              Reset the phone to the original factory settings
+               <button class="btn btn-primary" data-bs-target="#resetMobile"data-bs-toggle="modal" data-bs-dismiss="modal">How to reset a TV</button>
+             </p>
+            
+           </div>
+         </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <!-- Modal  for System Update -->
+   <div class="modal fade" id="updatemobile" aria-hidden="true" aria-labelledby="update" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="turnOff">System Update</h3>
+            <h5>Performance issue / unable to make calls / Camera issue.</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+              <span class="step">1</span>
+              <img src="assests/mobile/search.jpg" alt="" class="card_image">
+              <div class="card_text">
+               <p>- Go to Settings </p>
+               <p>- Tap on the search box</p>
+               <p>- Type : "Update"</p>
+             <div class="videoBtn">
+               <div class="play"></div>
+               <p>Play Video</p>
+             </div>
+             <div class="videoContainer">
+               <video controls src="/assests/video/mobile/update.mp4"></video>
+               <span class="close">&#10006; Close Video</span>
+             </div>
+              </div>
+            </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+               <span class="step">2</span>
+               <img src="assests/mobile/search update.jpg" alt="" class="card_image">
+               <p class="card_text">
+                Select System update
+               </p>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+               <span class="step">3</span>
+               <img src="assests/mobile/update mobile.jpeg" alt="" class="card_image">
+               <div class="card_text">
+                  <p>Click on Download and install </p>
+                  <p>Restart your device to complete the update.</p>
+               </div>
+               
+             </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-primary" id="resetbtn" data-bs-target="#performanceTest" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+  <!-- Modal  for Factory Reset -->
+  <div class="modal fade" id="resetMobile" aria-hidden="true" aria-labelledby="resetMobile" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="turnOff">Factory Reset </h3>
+            <h5>Customer’s Return Reason : Software or configuration issues / Sound issue / Network connection issues</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+               <span class="step">1</span>
+               <img src="assests/mobile/search.jpg" alt="" class="card_image">
+               <div class="card_text">
+                <p>- Go to Settings </p>
+                <p>- Tap on the search box</p>
+                <p>- Type : "Factory Reset"</p>
+              <div class="videoBtn">
+                <div class="play"></div>
+                <p>Play Video</p>
+              </div>
+              <div class="videoContainer">
+                <video controls src="/assests/video/mobile/reset.mp4"></video>
+                <span class="close">&#10006; Close Video</span>
+              </div>
+               </div>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+               <span class="step">2</span>
+               <img src="assests/mobile/type.jpg" alt="" class="card_image">
+               <p class="card_text">
+                Tap on Erase all data (Factory data reset).
+               </p>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+               <span class="step">3</span>
+               <img src="assests/mobile/resettap.jpg" alt="" class="card_image">
+               <p class="card_text">
+                Select Erase all data (factory reset) <p>
+             </div>
+          </div>
+          <div class="conatiner">
+            <div class="wrapper mobile" id="containerImg">
+               <span class="step">4</span>
+               <img src="assests/mobile/delete.jpg" alt="" class="card_image">
+               <p class="card_text">Finally, choose Delete all.<p>
+             </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-primary" id="resetbtn" data-bs-target="#performanceTest" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+    </div>
+    </main>
+    
+    <footer class="footer">
+      <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> - Jumia</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+</body>
+</html>
