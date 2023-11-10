@@ -26,7 +26,16 @@ window.addEventListener("scroll",()=>{
         navbar.classList.remove("active");
     }
 })
+//responsive Navbar
+const menuHamburger = document.querySelector(".hamburger-menu");
+const navLinks = document.querySelector('.links');
+const cardContainer = document.querySelector(".cardsContainer")
 
+menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu');
+    menuHamburger.classList.toggle('mobile-menu')
+    cardContainer.classList.toggle('mobile-menu')
+})
 //show/hide video
  const btnsVideo= document.querySelectorAll(".videoBtn")
  const videoContainer = document.querySelectorAll('.videoContainer')
