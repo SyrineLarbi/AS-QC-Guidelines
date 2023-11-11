@@ -705,7 +705,12 @@ display: none;
     }
     .card_text button{
       padding: 5px;
-    
+    }
+   .videoContainer .close{
+      right: 0;
+    }
+    .videoContainer video{
+      width: 300px;
     }
   }
 }
