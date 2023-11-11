@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assests/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>AS QC training</title>
+
+     <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+
+    <!--------Bootstrap--------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/fbcf1507ca.js" crossorigin="anonymous"></script>
+</head>
+<body class="home">
+
+    <!--------- Preloader Start --------->
+    <div id="preloader">
+        <div class="load">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!--------- Preloader End --------->
+    <!--------- Header Start --------->
+    <header class="header-section header-sticky">
+        <nav class="navBar-container">
+            <a href="#">
+                <img src="assests/favicon-32x32.png" alt="WMT" class="logo-img">
+            </a>
+            <div class="links">
+              <a href="index.html" class="active">Home</a>
+              <a href="QC.html">QC general instructions</a>
+              <a href="mobile.html">Mobile Phone</a>
+              <a href="tv.html">Television</a>
+              <a href="smartwatches.html">Smartwatches</a>
+              <a href="headphones.html">Headphones</a>
+              <a href="laptop.html">Laptop</a>
+            </div>
+            <a class='hamburger-menu'>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </a>
+        </nav>
+    </header>
+    <main>
+ <div class="home_container">
+        <div class="cardsContainer">
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#serialN">
+                <div class="icon mobile">
+                    <i><img src="assests/laptop/data-encryption.png" alt=""></i>
+                </div>
+              <h3>Find the Serial Number</h3>
+              <div class="go-corner">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+               </a>
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#systinfo">
+              <div class="icon mobile">
+                  <i><img src="assests/mobile/info.png" alt=""></i>
+              </div>
+            <h3>The Device Informations</h3>
+            <div class="go-corner">
+              <div class="go-arrow">
+                →
+              </div>
+            </div>
+             </a>
+            <a class="card-item" href="" data-bs-toggle="modal" data-bs-target="#storage">
+                <div class="icon mobile">
+                    <i><img src="assests/laptop/case-study.png" alt=""></i>
+                </div>
+              <h3>Storage Analysis RAM</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="#" data-bs-toggle="modal" data-bs-target="#HDDorSSD">
+                <div class="icon mobile">
+                  <i><img src="assests/laptop/database.png" alt=""></i>
+                </div>
+              <h3>Storage drive HDD or SSD</h3>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  →
+                </div>
+              </div>
+            </a>
+            <a class="card-item" href="" data-bs-toggle="modal" data-bs-target="#battery" >
+                <div class="icon mobile">
+                    <i><img src="assests/laptop/battery.png" alt=""></i>
+                </div>
+                <h3> Battery issue </h3>
+                <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
+                </div>
+                </div>
+            </a>
+            <a class="card-item" href="" data-bs-toggle="modal" data-bs-target="#resetHeadphone" >
+                <div class="icon mobile">
+                    <i><img src="assests/laptop/programming.png" alt=""></i>
+                </div>
+                <h3> Abnormal shutdown </h3>
+                <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
+                </div>
+                </div>
+            </a>
+            <a class="card-item" href="" data-bs-toggle="modal" data-bs-target="#resetLaptop" >
+                <div class="icon mobile">
+                    <i><img src="assests/laptop/protection.png" alt=""></i>
+                </div>
+                <h3> Factory Reset </h3>
+                <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
+                </div>
+                </div>
+            </a>
+            <a class="card-item" href="" data-bs-toggle="modal" data-bs-target="#resetHeadphone" >
+                <div class="icon mobile">
+                    <i><img src="assests/laptop/notice (1).png" alt=""></i>
+                </div>
+                <h3> Black Screen </h3>
+                <div class="go-corner" href="#">
+                <div class="go-arrow">
+                    →
+                </div>
+                </div>
+            </a>
+        </div>
+
+  <!-- Modal  for Find the Serial Number -->
+  <div class="modal fade" id="serialN" tabindex="-1" aria-labelledby="serialN" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl ">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="modal-title">
+                    <h3 id="turnOff">Find the Serial Number </h3>
+                    <h5>Customer’s Return Reason : It’s a counterfeit item, not the same model.</h5>
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body">
+                      <div class="button_box">
+                        <button class="tab_btn">Windows</button>
+                        <button class="tab_btn">Mac OS</button>
+                        <div class="line"></div>
+                      </div>
+                      <div class="content_box">
+                        <div class="content show">
+                           <div class="wrapper" id="containerImg">
+                            <span class="step">1</span>
+                            <img src="assests/laptop/W sn.jpg" alt="" class="card_image">
+                            <div class="card_text">
+                             <p>- Type cmd into the search bar</p>
+                             <p>- Type :<span style="color: blueviolet;">wmic bios get serialnumber</span> and Press Enter</p>
+                            </div>
+                           </div>
+                           <div class="wrapper" id="containerImg">
+                            <span class="step">2</span>
+                            <img src="assests/laptop/sn-laptop.jpg" alt="" class="card_image">
+                            <div class="card_text">
+                             <p>- Turn your laptop over  </p>
+                             <p>- Look for S/N or Serial Number</p>
+                            </div>
+                           </div>
+                        </div>
+                       
+                       <div class="content">
+                        <div class="wrapper">
+                           <span class="step">1</span>
+                           <div class="image_container">
+                            <img src="assests/laptop/MAC SN.jpg" alt="" >
+                            <img src="assests/laptop/MAC INFO.jpg" alt="" class="card_image"> 
+                          </div>
+                            <p class="card_text">On Mac, choose Apple menu > About This Mac.</p>
+                        </div>
+                        <div class="wrapper">
+                          <span class="step">2</span>
+                          <img src="assests/laptop/macbook-serial-number.jpg" alt="" class="card_image">
+                            <p class="card_text"> Check the surface of your product for a printed serial number.</p>
+                        </div>
+                       </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+  </div>
+  <!-- Modal  for The device informations -->
+  <div class="modal fade" id="systinfo" tabindex="-1" aria-labelledby="systinfo" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="turnOff">The Device informations</h3>
+            <h5>System Info: Find out when your Windows 11/10 was installed and other system information </h5>
+          </div>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="conatiner">
+                <div class="wrapper" id="containerImg">
+                    <span class="step">1</span>
+                    <img src="assests/laptop/combined.webp" alt="" class="card_image">
+                    <div class="card_text">
+                        <h5 style="font-weight: bold;"> Find basic information about your system :</h5>
+                        <p>Press Windows key + X > System.</p>
+                    </div>
+                   </div>
+            </div>
+            <div class="conatiner">
+                <div class="wrapper" id="containerImg">
+                    <span class="step">2</span>
+                    <img src="assests/laptop/syst2.webp" alt="" class="card_image">
+                    <div class="card_text">
+                        <h5 style="font-weight: bold;">Find out when your Windows 11/10 was installed : </h5>
+                        <p>- Type cmd into the search bar</p>
+                        <p>- Type <span>systeminfo</span> in the command prompt and hit Enter.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal  for Batterry issue< -->
+   <div class="modal fade" id="battery" aria-hidden="true" aria-labelledby="batterry" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="turnOff">Batterry issue</h3>
+            <h5>Customer’s Return Reason : Battery issue (The battery stops holding its charge.)            </h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+             <div class="wrapper" id="containerImg">
+                <span class="step">1</span>
+                <img src="assests/laptop/BAT 02.jpg" alt="" class="card_image">
+                <div class="card_text">
+                  <p>- Type cmd into the search bar</p>
+                  <p>- Type this command: <b> powercfg /batteryreport  </b>     </p>
+                  <p>Open the file by copying and pasting the path(copy it from the Command Prompt) into your browser : </p>
+                </div>
+               
+              </div>
+          </div>
+         
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">2</span>
+               <img src="assests/laptop/bat01.jpg" alt="" class="card_image">
+                <div class="card_text">
+                    <p>- Design Capacity is the original maximum charge of your battery. </p>
+                    <p>- Full Charge Capacity is how much charge your laptop battery is capable of holding now. </p>
+                    <p>If these two numbers are pretty close, then you have a <b style="color: green;">healthy battery.</b></p>
+                    <p>But if the Full Charge Capacity is much lower than the Design Capacity, then your battery's health has dropped significantly.</p>
+                      
+                </div>
+             </div>
+         </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal  for Storage Analysis RAM-->
+  <div class="modal fade" id="storage" tabindex="-1" aria-labelledby="storage" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="turnOff">Storage Analysis RAM</h3>
+            <h5>Customer’s Return Reason : Different storage space/ received 8Go instead of 16Go </h5>
+          </div>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body">
+            <div class="button_box">
+              <button class="tab_btn">Windows</button>
+              <button class="tab_btn">Mac OS</button>
+              <div class="line"></div>
+            </div>
+            <div class="content_box">
+              <div class="content show">
+                 <div class="wrapper" id="containerImg">
+                  <span class="step">1</span>
+                  <img src="assests/laptop/storage.webp" alt="" class="card_image">
+                  <div class="card_text">
+                   <p>- Press Windows key + X > System.</p>
+                   <p>- You should see a line named "Installed RAM" </p>
+                   <span>8GB of RAM is available on this Windows 11 PC </span>
+                  </div>
+                 </div>
+              </div>
+             
+             <div class="content">
+              <div class="wrapper">
+                 <span class="step">1</span>
+                 <img src="assests/laptop/mac storage.webp" alt="" class="card_image"> 
+                 <div class="card_text">
+                  <p >Just click the Apple icon in the upper-left corner of the screen, and select About This Mac.</p>
+                  <span>8GB of RAM is available on this MacBook Air</span>
+                 </div>
+              </div>
+             </div>
+            </div>
+          </div>
+      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal  for Storage drive HDD or SSD-->
+   <div class="modal fade" id="HDDorSSD" aria-hidden="true" aria-labelledby="HDDorSSD" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="turnOff">Storage drive HDD or SSD</h3>
+            <h5>Customer’s Return Reason: Received Storage Disk HDD instead of SSD   </h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="conatiner">
+            <div class="wrapper" id="containerImg">
+               <span class="step">1</span>
+               <div class="image_container">
+                <img src="assests/laptop/taskmanager.jpg" alt="" class="card_image">
+                <img src="assests/laptop/ssd disk.jpg" alt="" class="card_image">
+             </div> 
+               <div class="card_text">
+                <p>- Press Ctrl + Shift + Esc to bring up the Task Manager.</p>
+                <p>- Click the Performance tab and select Disk in the sidebar</p>
+               </div>
+             </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+  <!-- Modal  for Factory Reset -->
+  <div class="modal fade" id="resetLaptop" aria-hidden="true" aria-labelledby="resetLaptop" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="turnOff">Factory Reset </h3>
+            <h5>Customer’s Return Reason : System Call Failed” Error on Windows / my computer is far slow / a malware infection.</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body">
+            <div class="button_box">
+              <button class="tab_btn">Windows</button>
+              <button class="tab_btn">Mac OS</button>
+              <div class="line"></div>
+            </div>
+            <div class="content_box">
+              <div class="content show">
+                 <div class="wrapper" id="containerImg">
+                  <span class="step">1</span>
+                  <img src="assests/laptop/w11.webp" alt="" class="card_image">
+                  <div class="card_text">
+                   <h4> <b>Windows 11 : </b></h4>
+                   <p>- Press Win+I in combination to open the Settings app</p>
+                   <p>- You can open Settings > System > Recovery </p>
+                   <p>- Click Reset PC next to the Reset this PC option.</p>
+                   <div class="videoBtn">
+                    <div class="play"></div>
+                    <p>Play Video</p>
+                  </div>
+                  <div class="videoContainer">
+                    <video controls src="/assests/video/factory-reset-windows.mp4"></video>
+                    <span class="close">&#10006; Close Video</span>
+                  </div>
+                  </div>
+                 </div>
+                 <div class="wrapper" id="containerImg">
+                  <span class="step">1</span>
+                  <div class="image_container">
+                    <img src="assests/laptop/w10.webp" alt="" >
+                    <img src="assests/laptop/w10 02.webp" alt="" class="card_image"> 
+                  </div>
+                  <div class="card_text">
+                   <h4> <b>Windows 10 : </b></h4>
+                   <p>- Press Win+I in combination to open the Settings app</p>
+                   <p>- Click Update & Security to continue.</p>
+                   <p>- Click the Recovery tab and select Get started</p>
+                  </div>
+                 </div>
+                 <div class="wrapper" id="containerImg">
+                  <span class="step">2</span>
+                  <img src="assests/laptop/w11 02.webp" alt="" class="card_image">
+                  <p class="card_text">Select Remove everything, which wipes the drive clean by removing downloaded apps, settings, and personal files.
+                  </p>
+                 </div>
+                 <div class="wrapper" id="containerImg">
+                  <span class="step">3</span>
+                  <img src="assests/laptop/w1103.webp" alt="" class="card_image">
+                  <p class="card_text"> Choose Local reinstall     </p>
+                 </div>
+                 <div class="wrapper" id="containerImg">
+                  <span class="step">4</span>
+                  <img src="assests/laptop/w04.webp" alt="" class="card_image">
+                  <p class="card_text"> - Click Reset. Your computer will restart and boot back up again after some time.</p>
+                 </div>
+              </div>
+             
+             <div class="content">
+              <div class="wrapper">
+                 <span class="step">1</span>
+                 <div class="image_container">
+                  <img src="assests/laptop/MAC SN.jpg" alt="" >
+                  <img src="assests/laptop/MAC INFO.jpg" alt="" class="card_image"> 
+                </div>
+                  <p class="card_text">On Mac, choose Apple menu > About This Mac.</p>
+              </div>
+              <div class="wrapper">
+                <span class="step">2</span>
+                <img src="assests/laptop/macbook-serial-number.jpg" alt="" class="card_image">
+                  <p class="card_text"> Check the surface of your product for a printed serial number.</p>
+              </div>
+             </div>
+            </div>
+          </div>
+      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-primary" id="resetbtn" data-bs-target="#randomlyRestart" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+        </div>
+      </div>
+    </div>
+   </div>
+    </div>
+    </main>
+   
+    <footer class="footer">
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> - Jumia</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+</body>
+</html>
